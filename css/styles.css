@@ -64,6 +64,14 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+.navbar__menu {
+    text-align: right;
+}
+
+#navbar__list {
+display: flex;
+}
+
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
@@ -72,19 +80,21 @@ section {
 
 .navbar__menu li {
     display: inline-block;
+    cursor: pointer;
 }
 
 .navbar__menu .menu__link {
     display: block;
     padding: 1em;
     font-weight: bold;
-    text-decoration: none;
-    color: #000;
+    text-decoration: unset;
+    color: #000 !important;
+
 }
 
 .navbar__menu .menu__link:hover {
     background: #333;
-    color: #fff;
+    color: rgb(165, 196, 196) !important;
     transition: ease 0.3s all;
 }
 
@@ -130,8 +140,8 @@ section:nth-of-type(even) .landing__container {
 }
 
 /* Background Circles */
-/* Note that background circles are created with psuedo elements before and after */
-/* Circles appear to be random do to use of :nth-of-type psuedo class */
+/* Note that background circles are created with pseudo elements before and after */
+/* Circles appear to be random do to use of :nth-of-type pseudo class */
 section:nth-of-type(odd) .landing__container::before {
     content: '';
     background: rgba(255, 255, 255, 0.187);

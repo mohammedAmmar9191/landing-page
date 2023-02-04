@@ -49,7 +49,10 @@
 
 
 // Scroll to anchor ID using scrollTO event
-
+window.scrollTo({
+    top: 100,
+    behavior: "smooth"
+  })
 
 /**
  * End Main Functions
