@@ -15,7 +15,7 @@
 
 // test
 
-alert('page working')
+// alert('page working')
 
 /**
  * Comments should be present at the beginning of each procedure and class.
